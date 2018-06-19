@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://webservice.app.co.id/wsCUIS/CUISAuthentication.asmx?wsdl" docRef="http://webservice.app.co.id/wsCUIS/CUISAuthentication.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://webservice.app.co.id/wsCUIS/CUISAuthentication.asmx" xmlns:q1="http://tempuri.org/wsCUIS/Service1" binding="q1:CUISServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://webservice.app.co.id/wsCUIS/CUISAuthentication.asmx" xmlns:q2="http://tempuri.org/wsCUIS/Service1" binding="q2:CUISServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

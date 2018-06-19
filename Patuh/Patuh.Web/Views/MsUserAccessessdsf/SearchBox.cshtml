@@ -1,0 +1,24 @@
+
+@using (Html.BeginForm("Index", "MsUserAccesses", FormMethod.Post, new { id = "MsUserAccessesSearch" })) {
+      
+    <div class="row">
+  <div class="col-lg-4">
+    <div class="input-group">
+        <span class="input-group-addon " >
+         <i class="glyphicon glyphicon-search"></i>
+         </span>
+        @Html.TextBox("searchWord", null, new { @class = "form-control", placeholder = "Search" })
+     <span class="input-group-btn">
+        @Html.SubmitButton("Search", "Search", new { @class = "btn btn-primary" })        
+      </span>      
+    </div><!-- /input-group -->    
+  </div>
+  <div class="col-lg-2">
+    @*@(Html.ActionLink<MsUserAccessesController>(a => a.AdvanceSearch(1), "Advance Search"))*@
+    </div>  
+    <div class="col-lg-6">
+        	@(Html.ActionLink<MsUserAccessesController>(a => a.CreateOrUpdate(0), " ", new { @class = "btn btn-primary glyphicon glyphicon-plus pull-right  " + @TempData["Add"] + ""   }))		
+						    </div>
+</div><!-- /.row -->  
+}
+

@@ -1,0 +1,8 @@
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Packages\bin\Debug\$safeprojectname$.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Packages\bin\Debug\$safeprojectname$.pdb
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Packages\obj\Debug\$safeprojectname$.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Packages\obj\Debug\$safeprojectname$.pdb
+D:\SIDE JOB\Patuh\Patuh\Packages\bin\Debug\$safeprojectname$.dll
+D:\SIDE JOB\Patuh\Patuh\Packages\bin\Debug\$safeprojectname$.pdb
+D:\SIDE JOB\Patuh\Patuh\Packages\obj\Debug\$safeprojectname$.dll
+D:\SIDE JOB\Patuh\Patuh\Packages\obj\Debug\$safeprojectname$.pdb

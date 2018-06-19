@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://Smf.EmployeeLogin/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://Smf.EmployeeLogin/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://Smf.EmployeeLogin/">
+      <s:element name="ChangePasswordSMF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UIDLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePasswordSMFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangePasswordSMFResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MyHeader2" type="tns:MyHeader2" />
+      <s:complexType name="MyHeader2">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="GetPERNR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UIDLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPERNRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPERNRResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLoginToSMF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UIDLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLoginToSMFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckLoginToSMFResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginToSMF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UIDLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IDLocation" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginToSMFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginToSMFResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ChangePasswordSMFSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePasswordSMF" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSMFSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePasswordSMFResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePasswordSMFMyHeader2">
+    <wsdl:part name="MyHeader2" element="tns:MyHeader2" />
+  </wsdl:message>
+  <wsdl:message name="GetPERNRSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPERNR" />
+  </wsdl:message>
+  <wsdl:message name="GetPERNRSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPERNRResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPERNRMyHeader2">
+    <wsdl:part name="MyHeader2" element="tns:MyHeader2" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginToSMFSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckLoginToSMF" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginToSMFSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckLoginToSMFResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginToSMFMyHeader2">
+    <wsdl:part name="MyHeader2" element="tns:MyHeader2" />
+  </wsdl:message>
+  <wsdl:message name="LoginToSMFSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginToSMF" />
+  </wsdl:message>
+  <wsdl:message name="LoginToSMFSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginToSMFResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginToSMFMyHeader2">
+    <wsdl:part name="MyHeader2" element="tns:MyHeader2" />
+  </wsdl:message>
+  <wsdl:portType name="LoginService2Soap">
+    <wsdl:operation name="ChangePasswordSMF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Change SMF Login Password</wsdl:documentation>
+      <wsdl:input message="tns:ChangePasswordSMFSoapIn" />
+      <wsdl:output message="tns:ChangePasswordSMFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPERNR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get PERNR By UserID and LocationID</wsdl:documentation>
+      <wsdl:input message="tns:GetPERNRSoapIn" />
+      <wsdl:output message="tns:GetPERNRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckLoginToSMF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Change SMF Login Password</wsdl:documentation>
+      <wsdl:input message="tns:CheckLoginToSMFSoapIn" />
+      <wsdl:output message="tns:CheckLoginToSMFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginToSMF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login to SMF Application, return username</wsdl:documentation>
+      <wsdl:input message="tns:LoginToSMFSoapIn" />
+      <wsdl:output message="tns:LoginToSMFSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoginService2Soap" type="tns:LoginService2Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ChangePasswordSMF">
+      <soap:operation soapAction="http://Smf.EmployeeLogin/ChangePasswordSMF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ChangePasswordSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:ChangePasswordSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPERNR">
+      <soap:operation soapAction="http://Smf.EmployeeLogin/GetPERNR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPERNRMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPERNRMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLoginToSMF">
+      <soap:operation soapAction="http://Smf.EmployeeLogin/CheckLoginToSMF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CheckLoginToSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:CheckLoginToSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginToSMF">
+      <soap:operation soapAction="http://Smf.EmployeeLogin/LoginToSMF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:LoginToSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:LoginToSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoginService2Soap12" type="tns:LoginService2Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ChangePasswordSMF">
+      <soap12:operation soapAction="http://Smf.EmployeeLogin/ChangePasswordSMF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ChangePasswordSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ChangePasswordSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPERNR">
+      <soap12:operation soapAction="http://Smf.EmployeeLogin/GetPERNR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPERNRMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPERNRMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLoginToSMF">
+      <soap12:operation soapAction="http://Smf.EmployeeLogin/CheckLoginToSMF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CheckLoginToSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CheckLoginToSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginToSMF">
+      <soap12:operation soapAction="http://Smf.EmployeeLogin/LoginToSMF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:LoginToSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:LoginToSMFMyHeader2" part="MyHeader2" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoginService2">
+    <wsdl:port name="LoginService2Soap" binding="tns:LoginService2Soap">
+      <soap:address location="http://smfweb17.smf.com/loginservice2.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoginService2Soap12" binding="tns:LoginService2Soap12">
+      <soap12:address location="http://smfweb17.smf.com/loginservice2.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

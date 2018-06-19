@@ -1,0 +1,102 @@
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\AutoMapper.Net4.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Patuh.Web.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Patuh.Web.pdb
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Antlr3.Runtime.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\APP.Framework.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\AutoMapper.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\EntityFramework.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Microsoft.ReportViewer.Common.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Microsoft.Web.Infrastructure.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Microsoft.Web.Mvc.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\MvcContrib.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Newtonsoft.Json.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Patuh.Application.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Patuh.Domain.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Patuh.Infrastructure.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.Formatting.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.WebRequest.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Helpers.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Http.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Http.WebHost.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Mvc.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Optimization.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Razor.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.Deployment.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.Razor.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\WebGrease.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Patuh.Application.pdb
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Patuh.Domain.pdb
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Patuh.Infrastructure.pdb
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\APP.Framework.pdb
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\AutoMapper.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\EntityFramework.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\Newtonsoft.Json.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.Formatting.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.WebRequest.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Helpers.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Http.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Http.WebHost.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Mvc.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.Razor.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.Deployment.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.Razor.xml
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\obj\Debug\Patuh.Web.csprojResolveAssemblyReference.cache
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\obj\Debug\Patuh.Web.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Web\obj\Debug\Patuh.Web.pdb
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\AutoMapper.Net4.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Patuh.Web.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Patuh.Web.pdb
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Antlr3.Runtime.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\APP.Framework.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\AutoMapper.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\EntityFramework.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Microsoft.ReportViewer.Common.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Microsoft.Web.Mvc.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\MvcContrib.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Newtonsoft.Json.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Patuh.Application.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Patuh.Domain.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Patuh.Infrastructure.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.Formatting.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.WebRequest.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Helpers.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Http.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Http.WebHost.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Mvc.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Optimization.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Razor.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.Deployment.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.Razor.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\WebGrease.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Patuh.Application.pdb
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Patuh.Domain.pdb
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Patuh.Infrastructure.pdb
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\APP.Framework.pdb
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\AutoMapper.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\EntityFramework.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\Newtonsoft.Json.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.Formatting.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Net.Http.WebRequest.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Helpers.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Http.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Http.WebHost.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Mvc.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.Razor.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.Deployment.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\bin\System.Web.WebPages.Razor.xml
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\obj\Debug\Patuh.Web.csprojResolveAssemblyReference.cache
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\obj\Debug\Patuh.Web.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Web\obj\Debug\Patuh.Web.pdb

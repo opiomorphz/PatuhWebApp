@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8046F488-B2CA-4448-8AAC-422141B21D0F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Packages</RootNamespace>
+    <AssemblyName>$safeprojectname$</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AutoMapper.3.3.0\AutoMapper.3.3.0.nupkg" />
+    <None Include="AutoMapper.3.3.0\tools\AutoMapper.targets" />
+    <None Include="AutoMapper.3.3.0\tools\MonoAndroid\Install.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\MonoAndroid\uninstall.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\MonoTouch\Install.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\MonoTouch\uninstall.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\net40\Install.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\net40\uninstall.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\sl5\Install.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\sl5\uninstall.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\windows8\Install.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\windows8\uninstall.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\wp8\Install.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\wp8\uninstall.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\wpa81\Install.ps1" />
+    <None Include="AutoMapper.3.3.0\tools\wpa81\uninstall.ps1" />
+    <None Include="EntityFramework.5.0.0\Content\App.config.transform" />
+    <None Include="EntityFramework.5.0.0\Content\Web.config.transform" />
+    <None Include="EntityFramework.5.0.0\EntityFramework.5.0.0.nupkg" />
+    <None Include="EntityFramework.5.0.0\tools\EntityFramework.PS3.psd1" />
+    <None Include="EntityFramework.5.0.0\tools\EntityFramework.psd1" />
+    <None Include="EntityFramework.5.0.0\tools\EntityFramework.psm1" />
+    <None Include="EntityFramework.5.0.0\tools\init.ps1" />
+    <None Include="EntityFramework.5.0.0\tools\install.ps1" />
+    <None Include="EntityFramework.5.0.0\tools\Redirect.config" />
+    <None Include="EntityFramework.5.0.0\tools\Redirect.VS11.config" />
+    <None Include="Microsoft.AspNet.Mvc.4.0.20710.0\Microsoft.AspNet.Mvc.4.0.20710.0.nupkg" />
+    <None Include="Microsoft.AspNet.Providers.1.2\content\web.config.transform" />
+    <None Include="Microsoft.AspNet.Providers.1.2\Microsoft.AspNet.Providers.1.2.nupkg" />
+    <None Include="Microsoft.AspNet.Providers.1.2\tools\Install.ps1" />
+    <None Include="Microsoft.AspNet.Providers.Core.1.1\Microsoft.AspNet.Providers.Core.1.1.nupkg" />
+    <None Include="Microsoft.AspNet.Razor.2.0.20710.0\Microsoft.AspNet.Razor.2.0.20710.0.nupkg" />
+    <None Include="Microsoft.AspNet.Web.Optimization.1.0.0\Microsoft.AspNet.Web.Optimization.1.0.0.nupkg" />
+    <None Include="Microsoft.AspNet.WebApi.4.0.20710.0\Microsoft.AspNet.WebApi.4.0.20710.0.nupkg" />
+    <None Include="Microsoft.AspNet.WebApi.Client.4.0.20710.0\Microsoft.AspNet.WebApi.Client.4.0.20710.0.nupkg" />
+    <None Include="Microsoft.AspNet.WebApi.Core.4.0.20710.0\content\web.config.transform" />
+    <None Include="Microsoft.AspNet.WebApi.Core.4.0.20710.0\Microsoft.AspNet.WebApi.Core.4.0.20710.0.nupkg" />
+    <None Include="Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0.nupkg" />
+    <None Include="Microsoft.AspNet.WebPages.2.0.20710.0\Microsoft.AspNet.WebPages.2.0.20710.0.nupkg" />
+    <None Include="Microsoft.jQuery.Unobtrusive.Ajax.2.0.20710.0\Microsoft.jQuery.Unobtrusive.Ajax.2.0.20710.0.nupkg" />
+    <None Include="Microsoft.jQuery.Unobtrusive.Validation.2.0.20710.0\Microsoft.jQuery.Unobtrusive.Validation.2.0.20710.0.nupkg" />
+    <None Include="Microsoft.Net.Http.2.0.20710.0\lib\net45\_._" />
+    <None Include="Microsoft.Net.Http.2.0.20710.0\Microsoft.Net.Http.2.0.20710.0.nupkg" />
+    <None Include="Microsoft.Report.Viewer.11.0.0.0\Microsoft.Report.Viewer.11.0.0.0.nupkg" />
+    <None Include="Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <None Include="Mvc3Futures.3.0.20105.0\Mvc3Futures.3.0.20105.0.nupkg" />
+    <None Include="Mvc4Futures.4.0.20710.0\Mvc4Futures.4.0.20710.0.nupkg" />
+    <None Include="MvcContrib.Mvc3-ci.3.0.100.0\MvcContrib.Mvc3-ci.3.0.100.0.nupkg" />
+    <None Include="Newtonsoft.Json.4.5.6\Newtonsoft.Json.4.5.6.nupkg" />
+    <None Include="ReportViewerForMvc.1.1.1\content\web.config.transform" />
+    <None Include="ReportViewerForMvc.1.1.1\ReportViewerForMvc.1.1.1.nupkg" />
+    <None Include="repositories.config" />
+    <None Include="StudioDonder.MvcContrib.Mvc4.3.0.0.99\StudioDonder.MvcContrib.Mvc4.3.0.0.99.nupkg" />
+    <None Include="WebGrease.1.1.0\WebGrease.1.1.0.nupkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AutoMapper.3.3.0\lib\MonoAndroid\AutoMapper.Android.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\MonoAndroid\AutoMapper.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\MonoAndroid\AutoMapper.xml" />
+    <Content Include="AutoMapper.3.3.0\lib\MonoTouch\AutoMapper.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\MonoTouch\AutoMapper.iOS.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\MonoTouch\AutoMapper.xml" />
+    <Content Include="AutoMapper.3.3.0\lib\net40\AutoMapper.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\net40\AutoMapper.Net4.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\net40\AutoMapper.xml" />
+    <Content Include="AutoMapper.3.3.0\lib\portable-windows8+net40+wp8+sl5+MonoAndroid+MonoTouch\AutoMapper.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\portable-windows8+net40+wp8+sl5+MonoAndroid+MonoTouch\AutoMapper.xml" />
+    <Content Include="AutoMapper.3.3.0\lib\portable-windows8+net40+wp8+wpa81+sl5+MonoAndroid+MonoTouch\AutoMapper.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\portable-windows8+net40+wp8+wpa81+sl5+MonoAndroid+MonoTouch\AutoMapper.xml" />
+    <Content Include="AutoMapper.3.3.0\lib\sl5\AutoMapper.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\sl5\AutoMapper.SL5.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\sl5\AutoMapper.xml" />
+    <Content Include="AutoMapper.3.3.0\lib\windows8\AutoMapper.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\windows8\AutoMapper.WinRT.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\windows8\AutoMapper.xml" />
+    <Content Include="AutoMapper.3.3.0\lib\wp8\AutoMapper.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\wp8\AutoMapper.WP8.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\wp8\AutoMapper.xml" />
+    <Content Include="AutoMapper.3.3.0\lib\wpa81\AutoMapper.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\wpa81\AutoMapper.WPA81.dll" />
+    <Content Include="AutoMapper.3.3.0\lib\wpa81\AutoMapper.xml" />
+    <Content Include="EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+    <Content Include="EntityFramework.5.0.0\lib\net40\EntityFramework.xml" />
+    <Content Include="EntityFramework.5.0.0\lib\net45\EntityFramework.dll" />
+    <Content Include="EntityFramework.5.0.0\lib\net45\EntityFramework.xml" />
+    <Content Include="EntityFramework.5.0.0\tools\about_EntityFramework.help.txt" />
+    <Content Include="EntityFramework.5.0.0\tools\EntityFramework.PowerShell.dll" />
+    <Content Include="EntityFramework.5.0.0\tools\EntityFramework.PowerShell.Utility.dll" />
+    <Content Include="EntityFramework.5.0.0\tools\migrate.exe" />
+    <Content Include="Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll" />
+    <Content Include="Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.xml" />
+    <Content Include="Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll" />
+    <Content Include="Microsoft.AspNet.Providers.Core.1.1\readme.html" />
+    <Content Include="Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll" />
+    <Content Include="Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.xml" />
+    <Content Include="Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll" />
+    <Content Include="Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll" />
+    <Content Include="Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.xml" />
+    <Content Include="Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll" />
+    <Content Include="Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.xml" />
+    <Content Include="Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll" />
+    <Content Include="Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.xml" />
+    <Content Include="Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll" />
+    <Content Include="Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.xml" />
+    <Content Include="Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll" />
+    <Content Include="Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.xml" />
+    <Content Include="Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll" />
+    <Content Include="Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll" />
+    <Content Include="Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.xml" />
+    <Content Include="Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.xml" />
+    <Content Include="Microsoft.jQuery.Unobtrusive.Ajax.2.0.20710.0\Content\Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Microsoft.jQuery.Unobtrusive.Ajax.2.0.20710.0\Content\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Microsoft.jQuery.Unobtrusive.Validation.2.0.20710.0\Content\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Microsoft.jQuery.Unobtrusive.Validation.2.0.20710.0\Content\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll" />
+    <Content Include="Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll" />
+    <Content Include="Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.xml" />
+    <Content Include="Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.xml" />
+    <Content Include="Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL" />
+    <Content Include="Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL" />
+    <Content Include="Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="Mvc3Futures.3.0.20105.0\lib\Microsoft.Web.Mvc.dll" />
+    <Content Include="Mvc4Futures.4.0.20710.0\lib\net40\Microsoft.Web.Mvc.dll" />
+    <Content Include="Mvc4Futures.4.0.20710.0\license.txt" />
+    <Content Include="MvcContrib.Mvc3-ci.3.0.100.0\lib\MvcContrib.dll" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\sl3-wp\Newtonsoft.Json.dll" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\sl3-wp\Newtonsoft.Json.xml" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\sl4-windowsphone71\Newtonsoft.Json.dll" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\sl4-windowsphone71\Newtonsoft.Json.xml" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\sl4\Newtonsoft.Json.dll" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\sl4\Newtonsoft.Json.xml" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\winrt45\Newtonsoft.Json.dll" />
+    <Content Include="Newtonsoft.Json.4.5.6\lib\winrt45\Newtonsoft.Json.xml" />
+    <Content Include="Other\APP.Framework.dll" />
+    <Content Include="Other\APP.Framework.pdb" />
+    <Content Include="ReportViewerForMvc.1.1.1\content\ReportViewerWebForm.aspx" />
+    <Content Include="ReportViewerForMvc.1.1.1\lib\net45\ReportViewerForMvc.dll" />
+    <Content Include="StudioDonder.MvcContrib.Mvc4.3.0.0.99\lib\MvcContrib.dll" />
+    <Content Include="WebGrease.1.1.0\lib\Antlr3.Runtime.dll" />
+    <Content Include="WebGrease.1.1.0\lib\WebGrease.dll" />
+    <Content Include="WebGrease.1.1.0\tools\WG.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

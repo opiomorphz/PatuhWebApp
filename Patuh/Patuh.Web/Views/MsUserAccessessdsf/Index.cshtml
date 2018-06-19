@@ -1,0 +1,52 @@
+
+	@using SOPCompliance.Domain;
+    @using SOPCompliance.Web.Mvc.Controllers.ViewModels;
+ 
+    @using MvcContrib.UI.Grid;
+    @using  MvcContrib.Pagination;
+    @using SOPCompliance.Contracts.Query;
+    @using SOPCompliance.Web.Mvc.HtmlHelpers;
+
+    @model IPagination< MsUserAccessDto>
+
+    @{
+        ViewBag.Title = "MsUserAccesses";
+        
+        
+       
+    }
+      <div class="page-header">
+	    <h1>User Accesses</h1>
+    </div>
+    @{Html.RenderPartial("SearchBox");}
+   <br/>   
+    <div class="panel panel-default">
+    <div class="panel-heading">MsUserAccesses</div>
+    @Html.Grid(Model).Columns(column =>
+    {
+        
+                    
+            column.For( ent => ent.UserName ).Named("UserName");                  
+            
+                    
+            column.For( ent => ent.LocationId ).Named("LocationId");
+                    
+            
+                    
+          
+                
+    }).Columns(extraCols => {
+        extraCols.Custom(cus => (UrlMaker.OpenTag()
+                            + UrlMaker.LiCloseTag() + UrlMaker.LiOpenTag() + Html.ActionLink("View", "View/" + cus.Id, null, new { @class = "" + TempData["View"] + "" })
+                            + UrlMaker.LiCloseTag() + UrlMaker.LiOpenTag() + Html.ActionLink("Edit", "CreateOrUpdate/" + cus.Id, null, new { @class = "" + TempData["Edit"] + "" })
+                            + UrlMaker.LiCloseTag()+ UrlMaker.LiOpenTag()+ Html.ActionLink("Print", "Print/" + cus.Id, null, new { @class = "" + TempData["Print"] + "" })
+                            + UrlMaker.LiCloseTag() + UrlMaker.LiOpenTag() + Html.ActionLink("Delete", "Delete/" + cus.Id, null, new { @class = "" + TempData["Delete"]  + "" }))
+                            + UrlMaker.LiCloseTag() + UrlMaker.CloseTag()).Named("Action");
+    }).Attributes(@class => "table table-hover ")
+    </div>
+     @{Html.RenderPartial("Pager", Model);}
+    
+    
+
+
+

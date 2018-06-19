@@ -1,0 +1,13 @@
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Domain\bin\Debug\Patuh.Domain.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Domain\bin\Debug\Patuh.Domain.pdb
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Domain\bin\Debug\APP.Framework.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Domain\bin\Debug\APP.Framework.pdb
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Domain\obj\Debug\Patuh.Domain.csprojResolveAssemblyReference.cache
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Domain\obj\Debug\Patuh.Domain.dll
+c:\users\aeffendi\documents\visual studio 2010\Projects\Patuh\Patuh\Patuh.Domain\obj\Debug\Patuh.Domain.pdb
+D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\bin\Debug\Patuh.Domain.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\bin\Debug\Patuh.Domain.pdb
+D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\bin\Debug\APP.Framework.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\bin\Debug\APP.Framework.pdb
+D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\obj\Debug\Patuh.Domain.dll
+D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\obj\Debug\Patuh.Domain.pdb

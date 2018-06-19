@@ -1,0 +1,23 @@
+
+@using (Html.BeginForm())
+{ 
+<div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12 ">
+                  <div class="input-group">
+                  <span class="input-group-addon " >
+                 <i class="glyphicon glyphicon-search "></i>
+                 </span>
+                     @Html.TextBox("searchWord", null, new { @class = "form-control", placeholder = "Search for..." })
+                    <span class="input-group-btn">
+                      <button name="Search" value="Search" class="btn btn-default" type="submit">Search</button>
+                    </span>
+                  </div>
+                </div>
+         <ul class="nav navbar-right panel_toolbox">
+		    @Html.ActionLink("New", "Details", new { id = 0 }, new { @class = "btn sal_button" })
+        </ul>
+     </div>
+    
+}
+
+
