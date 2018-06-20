@@ -6,3 +6,8 @@ D:\SIDE JOB\Patuh\Patuh\Packages\bin\Debug\$safeprojectname$.dll
 D:\SIDE JOB\Patuh\Patuh\Packages\bin\Debug\$safeprojectname$.pdb
 D:\SIDE JOB\Patuh\Patuh\Packages\obj\Debug\$safeprojectname$.dll
 D:\SIDE JOB\Patuh\Patuh\Packages\obj\Debug\$safeprojectname$.pdb
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Packages\bin\Debug\$safeprojectname$.dll
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Packages\bin\Debug\$safeprojectname$.pdb
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Packages\obj\Debug\Packages.csproj.CoreCompileInputs.cache
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Packages\obj\Debug\$safeprojectname$.dll
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Packages\obj\Debug\$safeprojectname$.pdb

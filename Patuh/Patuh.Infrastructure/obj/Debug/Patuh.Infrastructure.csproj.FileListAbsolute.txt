@@ -17,3 +17,14 @@ D:\SIDE JOB\Patuh\Patuh\Patuh.Infrastructure\bin\Debug\APP.Framework.pdb
 D:\SIDE JOB\Patuh\Patuh\Patuh.Infrastructure\obj\Debug\Patuh.Infrastructure.csprojResolveAssemblyReference.cache
 D:\SIDE JOB\Patuh\Patuh\Patuh.Infrastructure\obj\Debug\Patuh.Infrastructure.dll
 D:\SIDE JOB\Patuh\Patuh\Patuh.Infrastructure\obj\Debug\Patuh.Infrastructure.pdb
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\bin\Debug\Patuh.Infrastructure.dll
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\bin\Debug\Patuh.Infrastructure.pdb
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\bin\Debug\APP.Framework.dll
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\bin\Debug\MvcContrib.dll
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\bin\Debug\Patuh.Domain.dll
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\bin\Debug\Patuh.Domain.pdb
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\bin\Debug\APP.Framework.pdb
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\obj\Debug\Patuh.Infrastructure.csprojResolveAssemblyReference.cache
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\obj\Debug\Patuh.Infrastructure.csproj.CoreCompileInputs.cache
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\obj\Debug\Patuh.Infrastructure.dll
+H:\SAUFI\DATA\PATUH\PatuhWebApp\Patuh\Patuh.Infrastructure\obj\Debug\Patuh.Infrastructure.pdb

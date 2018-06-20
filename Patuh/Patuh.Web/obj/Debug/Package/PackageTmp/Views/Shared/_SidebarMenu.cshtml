@@ -1,0 +1,45 @@
+﻿
+@using Patuh.Application
+@using APP.Framework
+@using Patuh.Web.HtmlHelpers
+<!-- sidebar menu -->
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+    <div class="menu_section">
+        <ul class="nav side-menu">
+            @*<li>
+            <a><i class="fa fa-home"></i> Master <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+                <li><a href="/HeaderDatas">Header Data</a></li>
+                <li><a href="project_plan.html">My Project Planning</a></li>
+                <li><a href="admin_add_activity.html">Request New Activity</a></li>
+            </ul>
+        </li>
+        <li><a><i class="fa fa-edit"></i> Admin <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+                <li><a href="report.html">Report</a></li>
+                <li><a href="admin_master_activity.html">Master Activity</a></li>
+            </ul>
+        </li>*@
+
+        @{
+            if (System.Web.HttpContext.Current.Session["userProfile"] != null)
+            {
+                UserProfile userProfile = new UserProfile();
+                userProfile = (UserProfile)System.Web.HttpContext.Current.Session["userProfile"];
+                MenuAppService maps = new MenuAppService(userProfile);
+                 @Html.NavBar(maps.RenderMenuWebMVC(userProfile.GlobalID));
+            }
+            else
+            {
+                FormsAuthentication.SignOut();
+                Session.Abandon();
+                Session.Clear();
+                FormsAuthentication.RedirectToLoginPage();
+            }
+            
+            
+        }
+        </ul>
+    </div>
+</div>
+<!-- /sidebar menu -->

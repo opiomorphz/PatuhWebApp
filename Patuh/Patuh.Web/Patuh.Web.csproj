@@ -283,7 +283,6 @@
     <Content Include="Content\themes\Images\img.jpg" />
     <Content Include="Content\themes\Images\login_fte_logo3.png" />
     <Content Include="Content\themes\Images\logo-front-FTE.png" />
-    <Content Include="Content\themes\Images\logo_APP_2018.jpg" />
     <Content Include="Content\themes\Images\logo_fte2.png" />
     <Content Include="Content\themes\Images\logo_fte2small.png" />
     <Content Include="Content\themes\Images\logo_fte3.png" />
@@ -3715,10 +3714,8 @@
     <Content Include="Images\img.jpg" />
     <Content Include="Images\login_fte_logo3.png" />
     <Content Include="Images\logo-front-FTE.png" />
-    <Content Include="Images\logo_APP_2018.jpg" />
     <Content Include="Images\logo_fte2.png" />
     <Content Include="Images\logo_fte2small.png" />
-    <Content Include="Images\logo_fte3.png" />
     <Content Include="Images\orderedList0.png" />
     <Content Include="Images\orderedList1.png" />
     <Content Include="Images\orderedList2.png" />
