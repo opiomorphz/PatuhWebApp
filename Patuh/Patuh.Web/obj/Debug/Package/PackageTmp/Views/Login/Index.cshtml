@@ -1,0 +1,33 @@
+﻿ 
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutGentelellaLogin.cshtml";
+}
+  @Html.Partial("_AlertPartial")
+ <section class="login_content">
+    
+            @using (Html.BeginForm("CekLogin", "Login", FormMethod.Post, new { @class = "form-login" }))
+                {
+               
+                  <div class="sal_logo_login_mobile"></div>
+			      <div class="sal_logofte_login_mobile"></div>
+			      <div class="sal_please_login">Please Login</div>
+                 	<div class="form-group">
+					        @Html.TextBox("userid", null, new { @class = "form-control", placeholder = "Username", required = "required" }) 
+                         </div>
+                        <div class="form-group form-actions">
+							@Html.Password("password", null, new { @class = "form-control password", placeholder = "Password", required = "required" }) 
+						</div>
+     
+                     <div class="form-actions">							                             
+							<button type="submit" class="btn btn-bricky pull-right">
+								Login <i class="icon-circle-arrow-right"></i>
+							</button>
+						</div>
+			              
+                                                                   
+                }
+  </section>
+  
+
+  

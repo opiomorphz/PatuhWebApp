@@ -1,0 +1,71 @@
+@using SOPCompliance.Domain;
+@using MvcContrib.UI.Grid;
+
+@model MsUserAccess
+
+@{
+    ViewBag.Title = "MsUserAccess Edit";
+    
+}
+
+<div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Advance Search MsUserAccesses</h3>
+            </div>
+            <div class="panel-body">
+@using (Html.BeginForm("Index", "MsUserAccesses", FormMethod.Post, new { id = "MsUserAccessesAdvanceSearch", @class="form-horizontal", role="form" })) {
+    
+    
+    
+                  <div class="form-group">  
+              @Html.LabelFor(m => m.UserName, null, new { @class = "col-lg-2 control-label" })
+              @Html.TextBoxFor(m => m.UserName, new {@class="col-lg-4" })
+	          </div>			
+    		
+			              <div class="form-group">  
+              @Html.LabelFor(m => m.GroupAccessId, null, new { @class = "col-lg-2 control-label" })
+              @Html.TextBoxFor(m => m.GroupAccessId, new {@class="col-lg-4" })
+	          </div>			
+    		
+			              <div class="form-group">  
+              @Html.LabelFor(m => m.LocationId, null, new { @class = "col-lg-2 control-label" })
+              @Html.TextBoxFor(m => m.LocationId, new {@class="col-lg-4" })
+	          </div>			
+    		
+			              <div class="form-group">  
+              @Html.LabelFor(m => m.UserAccessIsActive, null, new { @class = "col-lg-2 control-label" })
+              @Html.TextBoxFor(m => m.UserAccessIsActive, new {@class="col-lg-4" })
+	          </div>			
+    		
+			              <div class="form-group">  
+              @Html.LabelFor(m => m.cRemarks, null, new { @class = "col-lg-2 control-label" })
+              @Html.TextBoxFor(m => m.cRemarks, new {@class="col-lg-4" })
+	          </div>			
+    		
+			              <div class="form-group">  
+              @Html.LabelFor(m => m.cCreated, null, new { @class = "col-lg-2 control-label" })
+              @Html.TextBoxFor(m => m.cCreated, new {@class="col-lg-4" })
+	          </div>			
+    		
+			              <div class="form-group">  
+              @Html.LabelFor(m => m.dCreated, null, new { @class = "col-lg-2 control-label" })
+              @Html.TextBoxFor(m => m.dCreated, new {@class="col-lg-4" })
+	          </div>			
+    		
+			              <div class="form-group">  
+              @Html.LabelFor(m => m.cLastUpdated, null, new { @class = "col-lg-2 control-label" })
+              @Html.TextBoxFor(m => m.cLastUpdated, new {@class="col-lg-4" })
+	          </div>			
+    		
+			              <div class="form-group">  
+              @Html.LabelFor(m => m.dLastUpdated, null, new { @class = "col-lg-2 control-label" })
+              @Html.TextBoxFor(m => m.dLastUpdated, new {@class="col-lg-4" })
+	          </div>			
+    		
+			           @Html.SubmitButton("btnSave", "Save",new {@class="btn btn-primary" })
+    
+             
+}
+</div>
+</div>
+

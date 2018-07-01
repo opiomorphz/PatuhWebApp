@@ -54,6 +54,7 @@
     <Compile Include="Standard\MsUserRoleDataAccess.cs" />
     <Compile Include="Standard\MenuDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Security.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dto\" />

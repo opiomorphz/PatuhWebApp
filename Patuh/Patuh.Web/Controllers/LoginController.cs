@@ -69,7 +69,7 @@ namespace Patuh.Web.Controllers
                         {
                             userRole += "+";
                         }
-                        userRole += item.UserRoleID;
+                        userRole += item.UserRoleID + "|" + item.UserID + "|" + item.FullName;
                     }
                     //to be retrieved from DB
                     if (userRole == "")

@@ -11,3 +11,9 @@ D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\bin\Debug\APP.Framework.dll
 D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\bin\Debug\APP.Framework.pdb
 D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\obj\Debug\Patuh.Domain.dll
 D:\SIDE JOB\Patuh\Patuh\Patuh.Domain\obj\Debug\Patuh.Domain.pdb
+D:\SIDE JOB\PatuhWebApp\Patuh\Patuh.Domain\bin\Debug\Patuh.Domain.dll
+D:\SIDE JOB\PatuhWebApp\Patuh\Patuh.Domain\bin\Debug\Patuh.Domain.pdb
+D:\SIDE JOB\PatuhWebApp\Patuh\Patuh.Domain\bin\Debug\APP.Framework.dll
+D:\SIDE JOB\PatuhWebApp\Patuh\Patuh.Domain\bin\Debug\APP.Framework.pdb
+D:\SIDE JOB\PatuhWebApp\Patuh\Patuh.Domain\obj\Debug\Patuh.Domain.dll
+D:\SIDE JOB\PatuhWebApp\Patuh\Patuh.Domain\obj\Debug\Patuh.Domain.pdb

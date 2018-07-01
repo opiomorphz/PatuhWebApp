@@ -1,0 +1,50 @@
+
+ 
+    @using MvcContrib.UI.Grid;
+    @using  MvcContrib.Pagination;
+
+    @model IPagination<Patuh.Domain.MsUser>
+
+    @{
+        ViewBag.Title = "MsUserAccesses";        
+        
+       
+    }
+
+    <script type="text/javascript">
+
+        
+    
+    </script>
+
+
+      <div class="page-header">
+	    <h1>Master User Access</h1>
+    </div>
+      @{Html.RenderPartial("SearchBox");}
+      
+   <br/>   
+    <div class="panel panel-default">
+    <div class="panel-heading"><span class="glyphicon glyphicon-th-list"></span> List User Access</div>
+    @Html.Grid(Model).Columns(column =>
+    {
+
+
+        column.For(ent => ent.UserID).Named("User Name");
+
+
+        column.For(ent => ent.FullName).Named("Full Name");
+          
+                
+    }).Columns(extraCols =>
+    {
+        extraCols.Custom(cus => "<button type=\"submit\" onclick=\"parent.location='" + @Url.Action("CreateOrUpdate/" + cus.UserID) + "';return false;\" title=\"Edit\" value=\"Edit\" class = \"btn btn-xs btn-primary \" /><i class=\"glyphicon glyphicon-edit\"></i>   </button>");
+    }).Attributes(@class => "table table-hover ")
+
+     @{Html.RenderPartial("_PagerPartial", Model);}
+    </div>
+    
+    
+
+
+

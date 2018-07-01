@@ -8,6 +8,7 @@ using MvcContrib.Pagination;
 using Patuh.Domain;
 using Patuh.Domain.Dto;
 using System.Collections.Generic;
+using Patuh.Infrastructure.Utils;
 
 namespace Patuh.Infrastructure
 {
@@ -38,7 +39,7 @@ namespace Patuh.Infrastructure
         public MsUser GetLoginUserProfile(string UserID, string Pwd)
         {
             SqlConnection conn = new SqlConnection(DALInfo.ConnectionString);
-            SqlCommand cmd = new SqlCommand(string.Format("SELECT * FROM MsUser WHERE UserID = '{0}' AND Pwd = '{1}'", UserID, Pwd), conn);
+            SqlCommand cmd = new SqlCommand(string.Format("SELECT * FROM MsUser WHERE UserID = '{0}'", UserID), conn);
             //SqlCommand cmd = new SqlCommand(string.Format("SELECT * FROM MsUser", UserID, Pwd), conn);
             
             MsUser objTbl = new MsUser();
@@ -52,6 +53,16 @@ namespace Patuh.Infrastructure
                 if (da.HasRows)
                 {
                     objTbl = MoveDataToCollection(da)[0];
+
+                    string hashedPassword = Security.HashSHA1(Pwd + objTbl.UserGuid);
+
+                    if (objTbl.Pwd == hashedPassword)
+                    {
+                        return objTbl;
+                    }
+
+                    objTbl = new MsUser();
+
                 }
                 else
                 {
@@ -425,7 +436,7 @@ namespace Patuh.Infrastructure
             else if (item.RowState == DataRowState.Modified)
             {
                 cmd = new SqlCommand("up_UpdateMsUser");
-                cmd.Connection = new SqlConnection(DALInfo.ConnectionString);
+                //cmd.Connection = new SqlConnection(DALInfo.ConnectionString);
                 cmd.CommandType = CommandType.StoredProcedure;
                 //cmd.Parameters.Add("@moduleid", SqlDbType.VarChar, 5).Value = item.ModuleID;
                 cmd.Parameters.Add("@userid", SqlDbType.VarChar, 10).Value = item.UserID;
@@ -439,7 +450,7 @@ namespace Patuh.Infrastructure
                 cmd.Parameters.Add("@info3", SqlDbType.VarChar, 100).Value = item.Info3 == null ? (object)DBNull.Value : item.Info3;
                 cmd.Parameters.Add("@modusrid", SqlDbType.VarChar, 20).Value = item.ModUsrID == null ? (object)DBNull.Value : item.ModUsrID;
                 cmd.Parameters.Add("@activeflag", SqlDbType.Char, 1).Value = item.ActiveFlag;
-                cmd.ExecuteNonQuery();
+                //cmd.ExecuteNonQuery();
             }
             else if (item.RowState == DataRowState.Deleted)
             {

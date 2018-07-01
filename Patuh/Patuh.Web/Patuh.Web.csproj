@@ -283,7 +283,6 @@
     <Content Include="Content\themes\Images\img.jpg" />
     <Content Include="Content\themes\Images\login_fte_logo3.png" />
     <Content Include="Content\themes\Images\logo-front-FTE.png" />
-    <Content Include="Content\themes\Images\logo_APP_2018.jpg" />
     <Content Include="Content\themes\Images\logo_fte2.png" />
     <Content Include="Content\themes\Images\logo_fte2small.png" />
     <Content Include="Content\themes\Images\logo_fte3.png" />
@@ -3715,10 +3714,8 @@
     <Content Include="Images\img.jpg" />
     <Content Include="Images\login_fte_logo3.png" />
     <Content Include="Images\logo-front-FTE.png" />
-    <Content Include="Images\logo_APP_2018.jpg" />
     <Content Include="Images\logo_fte2.png" />
     <Content Include="Images\logo_fte2small.png" />
-    <Content Include="Images\logo_fte3.png" />
     <Content Include="Images\orderedList0.png" />
     <Content Include="Images\orderedList1.png" />
     <Content Include="Images\orderedList2.png" />
@@ -3752,15 +3749,35 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Login\Index.cshtml" />
     <None Include="Content\themes\Images\Thumbs.db" />
-    <None Include="Content\vendors\bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <None Include="Content\vendors\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="Content\vendors\bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <None Include="Content\vendors\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Content\vendors\font-awesome\fonts\fontawesome-webfont.eot" />
-    <None Include="Content\vendors\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <None Include="Content\vendors\font-awesome\fonts\fontawesome-webfont.woff" />
-    <None Include="Content\vendors\font-awesome\fonts\fontawesome-webfont.woff2" />
-    <None Include="Content\vendors\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\vendors\bootstrap\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendors\bootstrap\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendors\bootstrap\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendors\bootstrap\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendors\bootstrap\dist\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendors\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendors\bootstrap\dist\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendors\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\vendors\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\vendors\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\vendors\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\vendors\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\vendors\font-awesome\fonts\FontAwesome.otf" />
     <None Include="Images\Thumbs.db" />
     <Content Include="Views\Shared\_SidebarMenu.cshtml" />
     <Content Include="Views\Shared\_TopNav.cshtml" />
@@ -3770,8 +3787,8 @@
     <Content Include="Views\MsUserAccesses\CreateOrUpdate.cshtml" />
     <Content Include="Views\MsUserAccesses\Index.cshtml" />
     <Content Include="Views\MsUserAccesses\SearchBox.cshtml" />
-    <None Include="Views\Shared\_LayoutGentelellaLogin.cshtml" />
-    <None Include="Views\Shared\_LayoutGentelellaStandard.cshtml" />
+    <Content Include="Views\Shared\_LayoutGentelellaLogin.cshtml" />
+    <Content Include="Views\Shared\_LayoutGentelellaStandard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\themes\gentelella\css\custom.cssBAK" />

@@ -11,7 +11,7 @@ namespace Patuh.Web.Controllers.ViewModels
         public String FullName { get; set; }
         public String Pwd { get; set; }
         public IList<MsUserRoleViewModel> UserRoles { get; set; }
-
+        public bool isUpdate { get; set; }
     }
 
 

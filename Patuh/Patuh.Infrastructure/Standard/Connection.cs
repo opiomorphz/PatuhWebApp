@@ -39,7 +39,8 @@ namespace Patuh.Infrastructure
             get
             {
                 //return @"Data Source=dbdev\sqlexpress;Initial Catalog=TestingFramework;Persist Security Info=True;User ID=webdev;Password=123456;" + SqlProfilerInfo;
-                return @"Data Source=JKT-1370;Initial Catalog=Patuh;Integrated Security=false;User ID=sa;Password=123456;" + SqlProfilerInfo;
+                //return @"Data Source=JKT-1370;Initial Catalog=Patuh;Integrated Security=false;User ID=sa;Password=123456;" + SqlProfilerInfo;
+                return @"Data Source=aal711cbuz184q.cudpqetsnx5t.ap-southeast-1.rds.amazonaws.com;Initial Catalog=Patuh;User ID=patuhdb;Password=adminpatuh;";
             }
         }
 

@@ -98,7 +98,7 @@ namespace SOPCompliance.Web.Mvc.Controllers
             {
                 msUserAccessViewModel.FullName = msUser.FullName;
                 msUserAccessViewModel.UserID = id;
-                msUserAccessViewModel.Pwd = msUser.Pwd;
+                //msUserAccessViewModel.Pwd = msUser.Pwd;
             }
 
             IList<MsUserRole> listUserRoles =  msUserRoleDataAccess.GetMsUserRoleList();
@@ -120,6 +120,7 @@ namespace SOPCompliance.Web.Mvc.Controllers
 
 
             msUserAccessViewModel.UserRoles = listUserRoleViewModels;
+            msUserAccessViewModel.isUpdate = !string.IsNullOrEmpty(id);
 
 
             return View(msUserAccessViewModel);
@@ -135,7 +136,15 @@ namespace SOPCompliance.Web.Mvc.Controllers
             bcrumb.AddNode(Url.Action("Index", "Home"), "Home");
             bcrumb.AddNode(Url.Action("Index", "MsUserAccesses"), "User Access");
             bcrumb.AddNode(Url.Action("CreateOrUpdate", "MsUserAccesses"), "Create Or Update");
-
+            if(!msUserViewModel.isUpdate){
+                int countDuplicate  = msUserDataAccess.GetMsUserListCustom(string.Format("UserID = '{0}'", msUserViewModel.UserID), "", 1, 100).Count();
+                if (countDuplicate > 0)
+                {
+                    Error("User ID already registered, please choose another User ID");
+                    return View(msUserViewModel);
+                }
+            }
+            
 
             MsUser msUser = msUserDataAccess.GetMsUserByMsUserID(msUserViewModel.UserID);
 
@@ -151,6 +160,14 @@ namespace SOPCompliance.Web.Mvc.Controllers
             }
             else
             {
+                if (!string.IsNullOrEmpty(msUserViewModel.Pwd))
+                {
+                    Guid userGuid = System.Guid.NewGuid();
+                    string hashedPassword = Security.HashSHA1(msUserViewModel.Pwd + userGuid.ToString());
+
+                    msUser.Pwd = hashedPassword;
+                    msUser.UserGuid = userGuid.ToString();
+                }
                 msUser.RowState = System.Data.DataRowState.Modified;
             }
 
@@ -172,7 +189,6 @@ namespace SOPCompliance.Web.Mvc.Controllers
 
             Success("User Successfully saved");
             return this.RedirectToAction("Index");
-            return View();
         }
 
 
