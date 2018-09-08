@@ -17,6 +17,7 @@ namespace Patuh.Web
                          "~/Content/vendors/bootstrap/dist/js/bootstrap.js",
                          "~/Content/vendors/fastclick/lib/fastclick.js",
                          "~/Content/themes/gentelella/js/custom.js"
+                         
                        ));
 
 

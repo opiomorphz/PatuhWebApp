@@ -70,7 +70,7 @@ namespace SOPCompliance.Web.Mvc.Controllers
             }
 
 
-            IPagination<MsUser> listUsers = msUserDataAccess.GetMsUserListPaginated(whereClause, "", page.Value, 10);
+            IPagination<MsUser> listUsers = msUserDataAccess.GetMsUserListPaginated(whereClause, "TsCrt DESC", page.Value, 10);
 
             //IMsUserAccessesQuery Query = new MsUserAccessesListQuery();
             //IPagination<MsUserAccessDto> listMsUserAccessViewModel = Query.GetPagedQRY(2, page.Value, DataGlobals.ROW_PAGE, whereClause, OrderBy);
@@ -128,7 +128,6 @@ namespace SOPCompliance.Web.Mvc.Controllers
       
         [ValidateAntiForgeryToken]
         [HttpPost]
-
         public ActionResult CreateOrUpdate(MsUserAccessViewModel msUserViewModel)
         {
             BootstrapBreadcrumbHelper bcrumb = new BootstrapBreadcrumbHelper();
@@ -191,6 +190,24 @@ namespace SOPCompliance.Web.Mvc.Controllers
             return this.RedirectToAction("Index");
         }
 
+
+        [HttpGet]
+        public ActionResult Delete(string id="")
+        {
+            BootstrapBreadcrumbHelper bcrumb = new BootstrapBreadcrumbHelper();
+
+            bcrumb.AddNode(Url.Action("Index", "Home"), "Home");
+            bcrumb.AddNode(Url.Action("Index", "MsUserAccesses"), "User Access");
+            
+            MsUser msUser = msUserDataAccess.GetMsUserByMsUserID(id);
+
+            msUser.RowState = System.Data.DataRowState.Deleted;           
+
+            msUserDataAccess.Update(ref msUser);
+
+            Success("User Successfully deleted");
+            return this.RedirectToAction("Index");
+        }
 
        
 

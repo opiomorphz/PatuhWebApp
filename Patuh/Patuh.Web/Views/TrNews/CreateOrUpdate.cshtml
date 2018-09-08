@@ -1,0 +1,144 @@
+
+@using MvcContrib.UI.Grid;
+
+@model Patuh.Web.Controllers.ViewModels.TrArticleViewModel
+
+@{
+    ViewBag.Title = "MsUserAccess Add/Edit";
+    
+}
+
+
+<script language="javascript" >
+
+    function doBack(url) {
+        location.href = "/TrNews";
+    }
+
+
+
+</script>
+
+@section CustomJsFooter{
+  $.ajaxSetup({ cache: false });
+
+  $(document).on('click', '#addImage', function() {
+            var imageContainer = $('#imageContainer');                                                    
+                   
+            var temp = '<div class="col-xs-6 col-md-3"><a href="/TrArticles/downloadImage/0" target="_blank"><div class="thumbnail"> <div> <a href="#" class="delImage"><p class="pull-right clearfix"> X </p></a> </div>' +
+                        '<div style="margin-top:15px"><input type="file" class="form-control input-xs" title="Cari" id = "imageFileId", name = "imageFiles" /></div></div></div>';  
+
+            $(imageContainer).append(temp);
+
+  });
+
+  $(document).on('click', '.delImage', function() {
+
+      $(this).parent().parent().parent().remove();
+      reorderImageIndex();
+
+
+  });
+
+   function reorderImageIndex(){
+        var divIdx = 0;
+
+            $('#imageContainer').find('input[type="hidden"]').each(function (idxHid, hid) {
+                var prefix  = 'listImage[' + divIdx + ']';
+                this.name = this.name.replace(/listImage\[\d+\]/, prefix);
+                this.id = this.id.replace(/listImage\[\d+\]/, prefix);
+                divIdx++;
+            });
+   }
+
+      
+}
+
+<div class="page-header">
+	    <h1>Berita Detail</h1>
+    </div>
+<div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><span class="glyphicon glyphicon-list-alt"></span> Detail Berita</h3>
+            </div>
+            <div class="panel-body">
+        @{
+            var formAttr = new Dictionary<string, object>();
+            formAttr.Add("class", "form-horizontal");
+            formAttr.Add("role", "form");
+            formAttr.Add("enctype", "multipart/form-data");
+        }
+        @* -- Begin Form -- *@
+        @using (Html.BeginForm("CreateOrUpdate", "TrNews"
+            , ViewBag.RouteDicForList as RouteValueDictionary
+            , FormMethod.Post, formAttr))
+        {
+    @Html.AntiForgeryToken()
+    
+             <div class="form-group">
+                @Html.LabelFor(m => m, "Judul", new { @class = "col-md-1 control-label" })
+                <div class="col-md-2">
+                    @Html.TextBoxFor(m => m.Title,  new { @class = "form-control" })
+                </div>
+                @Html.ValidationMessageFor(m => m.Title)
+            </div>  
+    	
+            <div class="form-group">
+                @Html.LabelFor(m => m.Story, "Cerita", new { @class = "col-md-1 control-label" })
+                <div class="col-md-7">
+                    @Html.TextAreaFor(m => m.Story, 6, 10, new { @class = "form-control"})
+                </div>
+                @Html.ValidationMessageFor(m => m.Story)
+            </div>              	
+            
+            <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <h5 class="panel-title pull-left"><span class="glyphicon glyphicon-picture"></span> Gambar Berita</h5>    
+              <a id="addImage" style=" margin:0px; padding:0px" href="#" class="btn btn-primary glyphicon glyphicon-plus pull-right" onclick="return false;"> Tambah &nbsp; </a>
+            </div>
+            <div class="panel-body">
+            <div class="row" id ="imageContainer">
+             @{
+
+            if (Model.listImage != null && Model.listImage.Count > 0)
+            {int i = 0;
+                foreach (var item in Model.listImage)
+                {
+                 
+                 <div class="col-xs-6 col-md-3">         
+                 <input type="hidden" id="listImage[@i].Id" name="listImage[@i].Id" value="@item.Id" />        
+                     <div class="thumbnail">
+                         <div>
+                             <a href="#" class="delImage">
+                                 <p class="pull-right clearfix">
+                                     X
+                                 </p>
+                             </a>
+                         </div>
+                         <div style="margin-top:15px">
+                             <a href="/TrArticles/downloadImage/@item.Id" target="_blank" >
+                                 <img src="@(string.Format("data:image/png;base64,{0}", Convert.ToBase64String(item.Image))) " />
+                             </a>
+                         </div>
+                     </div>
+                     
+                 </div>
+                    i++;
+                }
+
+            }
+            }
+            
+         </div>
+           </div>
+           </div>
+         
+            <input type="submit" id="btnSave" title= "Save" value="Save" class="btn btn-primary" />
+            <input type="button" id="btnBack" title= "back" value="Back" onclick="javascript:doBack();" class="btn btn-primary" />
+    
+           
+        }
+</div>
+</div>
+
+

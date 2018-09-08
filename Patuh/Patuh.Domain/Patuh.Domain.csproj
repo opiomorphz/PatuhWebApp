@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="Dto\GetmenuDto.Generated.cs" />
     <Compile Include="Dto\MsUserDto.cs" />
+    <Compile Include="Standard\TrImageAttachment.cs" />
+    <Compile Include="Standard\TrArticle.cs" />
     <Compile Include="Standard\MsSerial.cs" />
     <Compile Include="Standard\MsUser.cs" />
     <Compile Include="Standard\MsUserRole.cs" />

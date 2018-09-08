@@ -43,7 +43,7 @@
              <div class="form-group">
                 @Html.LabelFor(m => m.UserID, "User Name", new { @class = "col-md-2 control-label" })
                 <div class="col-md-2">
-                    @Html.TextBoxFor(m => m.UserID, new { @class = "form-control" })
+                    @Html.TextBoxFor(m => m.UserID, Model.isUpdate ? (object) new { @class = "form-control", @readonly = "readonly" } : new { @class = "form-control"})
                 </div>
                 @Html.ValidationMessageFor(m => m.UserID)
             </div>  
@@ -51,7 +51,7 @@
             <div class="form-group">
                 @Html.LabelFor(m => m.FullName, "Full Name", new { @class = "col-md-2 control-label" })
                 <div class="col-md-3">
-                    @Html.TextBoxFor(m => m.FullName, new { @class = "typeahead form-control" })
+                    @Html.TextBoxFor(m => m.FullName, new { @class = "form-control" })
                 </div>
                 @Html.ValidationMessageFor(m => m.FullName)
             </div>              	

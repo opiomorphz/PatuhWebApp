@@ -455,13 +455,12 @@ namespace Patuh.Infrastructure
             else if (item.RowState == DataRowState.Deleted)
             {
                 cmd = new SqlCommand("up_DeleteMsUser");
-                cmd.Connection = new SqlConnection(DALInfo.ConnectionString);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@moduleid", SqlDbType.VarChar, 5).Value = item.ModuleID;
+                //cmd.Parameters.Add("@moduleid", SqlDbType.VarChar, 5).Value = item.ModuleID;
                 cmd.Parameters.Add("@userid", SqlDbType.VarChar, 10).Value = item.UserID;
-                cmd.Parameters.Add("@userroleid", SqlDbType.VarChar, 20).Value = item.UserRoleID;
-                cmd.Parameters.Add("@modusrid", SqlDbType.VarChar, 20).Value = item.ModUsrID == null ? (object)DBNull.Value : item.ModUsrID;
-                cmd.ExecuteNonQuery();
+                //cmd.Parameters.Add("@userroleid", SqlDbType.VarChar, 20).Value = item.UserRoleID;
+                //cmd.Parameters.Add("@modusrid", SqlDbType.VarChar, 20).Value = item.ModUsrID == null ? (object)DBNull.Value : item.ModUsrID;
+                //cmd.ExecuteNonQuery();
             }
 
             if (cmd != null)

@@ -166,10 +166,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\TrNewsController.cs" />
+    <Compile Include="Controllers\TrArticlesController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MsUserAccessesController.cs" />
+    <Compile Include="Controllers\ViewModels\TrImageAttachmentViewModel.cs" />
+    <Compile Include="Controllers\ViewModels\TrArticleViewModel.cs" />
     <Compile Include="Controllers\ViewModels\MsUserAccessViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -308,6 +312,7 @@
     <Content Include="Content\vendors\autosize\dist\autosize.min.js" />
     <Content Include="Content\vendors\autosize\example\index.html" />
     <Content Include="Content\vendors\autosize\src\autosize.js" />
+    <Content Include="Content\vendors\bootbox\bootbox.min.js" />
     <Content Include="Content\vendors\bootstrap-daterangepicker\daterangepicker.css" />
     <Content Include="Content\vendors\bootstrap-daterangepicker\daterangepicker.js" />
     <Content Include="Content\vendors\bootstrap-daterangepicker\demo.html" />
@@ -457,6 +462,7 @@
     <Content Include="Content\vendors\bootstrap\grunt\bs-raw-files-generator.js" />
     <Content Include="Content\vendors\bootstrap\js\affix.js" />
     <Content Include="Content\vendors\bootstrap\js\alert.js" />
+    <Content Include="Content\vendors\bootstrap\js\bootbox.min.js" />
     <Content Include="Content\vendors\bootstrap\js\button.js" />
     <Content Include="Content\vendors\bootstrap\js\carousel.js" />
     <Content Include="Content\vendors\bootstrap\js\collapse.js" />
@@ -3789,6 +3795,14 @@
     <Content Include="Views\MsUserAccesses\SearchBox.cshtml" />
     <Content Include="Views\Shared\_LayoutGentelellaLogin.cshtml" />
     <Content Include="Views\Shared\_LayoutGentelellaStandard.cshtml" />
+    <Content Include="Views\TrArticles\AdvanceSearch.cshtml" />
+    <Content Include="Views\TrArticles\CreateOrUpdate.cshtml" />
+    <Content Include="Views\TrArticles\Index.cshtml" />
+    <Content Include="Views\TrArticles\SearchBox.cshtml" />
+    <Content Include="Views\TrNews\AdvanceSearch.cshtml" />
+    <Content Include="Views\TrNews\CreateOrUpdate.cshtml" />
+    <Content Include="Views\TrNews\Index.cshtml" />
+    <Content Include="Views\TrNews\SearchBox.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\themes\gentelella\css\custom.cssBAK" />

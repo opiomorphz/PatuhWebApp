@@ -1,0 +1,117 @@
+
+ 
+    @using MvcContrib.UI.Grid;
+    @using  MvcContrib.Pagination;
+
+    @model IPagination<Patuh.Domain.TrArticle>
+
+    @{
+        ViewBag.Title = "Berita";        
+        
+       
+    }
+   
+   
+    @section CustomJsFooter{
+        $.ajaxSetup({ cache: false });
+
+        function showHideArticle(trId , isActive){
+            $.getJSON('/TrArticles/SetStatus', { id: trId, status : isActive }, function (data) {
+                         bootbox.alert(data.message);
+                    })
+                     .done(function () {
+                     })
+                    .fail(function (qXHR, textStatus, errorThrown) {
+                        alert(textStatus);
+                        alert(errorThrown);
+                    })
+                    .always(function () {
+                    });
+        }
+
+
+        $(document).on('click', '.approveBtn', function () {
+            var statusCol =  $(this).parent().prev();
+            var titleCol =  $(this).parent().parent().find("td:first")
+            var trId =  $(this).parent().parent().attr('id');
+
+            bootbox.confirm({
+                size: "small",
+                message: "Tampilkan Content dengan Judul : <strong>"+ $(titleCol).html()  +"</strong> ? ",
+                    buttons: {
+                    confirm: {
+                        label: '<i class="fa fa-check"></i> Tampilkan',
+                        className: 'btn-success'
+                    },
+                    cancel: {
+                        label: '<i class="fa fa-times"></i> Sembunyikan',
+                        className: 'btn-danger'
+                    }
+                },
+                callback: function (result) {
+                    if (result == false) {
+                        $(statusCol).empty();
+                        showHideArticle(trId, 'N');
+                    } 
+                    else if(result == true) {
+                        $(statusCol).html('aktif');
+                        showHideArticle(trId, 'Y');
+                    }
+
+                }
+            });
+            
+        });
+             
+    
+        
+}
+
+    
+    <script type="text/javascript">
+        function doApprove(obj, id) {
+
+
+        }
+        
+    
+    </script>
+
+
+      <div class="page-header">
+	    <h1>Berita</h1>
+    </div>
+      @{Html.RenderPartial("SearchBox");}
+      
+   <br/>   
+    <div class="panel panel-default">
+    <div class="panel-heading"><span class="glyphicon glyphicon-th-list"></span> List Berita</div>
+    @Html.Grid(Model).Columns(column =>
+    {
+
+        column.For(ent => ent.Title).Named("Title");
+
+        column.For(ent => ent.GPSLocation).Named("GPSLocation");
+        
+        column.For(ent => ent.GPSLong).Named("Longitude");
+
+        column.For(ent => ent.GPSLat).Named("GPSLat");
+
+        column.For(ent => ent.cCreated).Named("Created By");
+
+        column.For(ent => ent.dCreated).Named("Created On");
+
+        column.For(ent => string.IsNullOrEmpty(ent.cStatus) || ent.cStatus == "N" ? "" : "aktif").Named("Status");
+          
+                
+    }).Columns(extraCols =>
+    {
+        extraCols.Custom(cus => "<button type=\"button\" onclick=\"doApprove(this, " + cus.Id + ");return false;\" title=\"Edit\" value=\"Aktif / non Aktif\" class = \"btn btn-xs btn-primary approveBtn \" /><i class=\"glyphicon glyphicon-off\"></i>   </button> <button type=\"submit\" onclick=\"parent.location='" + @Url.Action("CreateOrUpdate/" + cus.Id) + "';return false;\" title=\"Lihat Detail\" value=\"Detail\" class = \"btn btn-xs btn-primary \" /><i class=\"glyphicon glyphicon-search\"></i>   </button>");
+    }).Attributes(@class => "table table-hover ").RowAttributes(x => new MvcContrib.Hash(id => string.Format("{0}", x.Item.Id)))
+     @{Html.RenderPartial("_PagerPartial", Model);}
+    </div>
+    
+    
+
+
+

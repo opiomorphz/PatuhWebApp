@@ -1,0 +1,105 @@
+
+@using MvcContrib.UI.Grid;
+
+@model Patuh.Web.Controllers.ViewModels.TrArticleViewModel
+
+@{
+    ViewBag.Title = "MsUserAccess Add/Edit";
+    
+}
+
+
+<script language="javascript" >
+
+    function doBack(url) {
+        location.href = "/TrArticles";
+    }
+
+
+
+</script>
+
+@section CustomJsFooter{
+
+      
+}
+
+<div class="page-header">
+	    <h1>Artikel Detail</h1>
+    </div>
+<div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><span class="glyphicon glyphicon-file"></span> Detail Artikel</h3>
+            </div>
+            <div class="panel-body">
+        @{
+            var formAttr = new Dictionary<string, object>();
+            formAttr.Add("class", "form-horizontal");
+            formAttr.Add("role", "form");
+        }
+        @* -- Begin Form -- *@
+        @using (Html.BeginForm("CreateOrUpdate", "TrArticles"
+            , ViewBag.RouteDicForList as RouteValueDictionary
+            , FormMethod.Post, formAttr))
+        {
+    @Html.AntiForgeryToken()
+    
+             <div class="form-group">
+                @Html.LabelFor(m => m, "Judul", new { @class = "col-md-1 control-label" })
+                <div class="col-md-2">
+                    @Html.TextBoxFor(m => m.Title, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+                @Html.ValidationMessageFor(m => m.Title)
+            </div>  
+    	
+            <div class="form-group">
+                @Html.LabelFor(m => m.Story, "Cerita", new { @class = "col-md-1 control-label" })
+                <div class="col-md-7">
+                    @Html.TextAreaFor(m => m.Story, 6, 10, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+                @Html.ValidationMessageFor(m => m.Story)
+                
+            </div>              	
+            
+     <div class="panel panel-default">
+            <div class="panel-heading">
+              <h5 class="panel-title"><span class="glyphicon glyphicon-picture"></span> Gambar Artikel</h5>       
+            </div>
+            <div class="panel-body">
+            <div class="row">
+             @{
+
+            if (Model.listImage != null && Model.listImage.Count > 0)
+            {
+                foreach (var item in Model.listImage)
+                {
+                 <div class="col-xs-6 col-md-3">
+                 <a href="/TrArticles/downloadImage/@item.Id" target="_blank" >
+                     <div class="thumbnail">
+                         <img src="@(string.Format("data:image/png;base64,{0}", Convert.ToBase64String(item.Image))) " />
+                         <!--
+                         <div class="caption">
+                             <p style="text-align:center">
+                                 <a href="#" class="btn btn-primary" role="button">Lihat ukuran asli</a>
+                             </p>
+                         </div>-->
+                     </div>
+                     </a>
+                 </div>
+                }
+
+            }
+            }
+            
+         </div>
+           </div>
+           </div>
+    
+            <input type="button" id="btnBack" title= "back" value="Back" onclick="javascript:doBack();" class="btn btn-primary" />
+    
+           
+        }
+</div>
+</div>
+
+

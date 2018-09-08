@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplConfig.cs" />
+    <Compile Include="Standard\TrImageAttachmentDataAccess.cs" />
+    <Compile Include="Standard\TrArticleDataAccess.cs" />
     <Compile Include="Standard\MsSerialDataAccess.cs" />
     <Compile Include="Standard\Connection.cs" />
     <Compile Include="Standard\MsUserDataAccess.cs" />

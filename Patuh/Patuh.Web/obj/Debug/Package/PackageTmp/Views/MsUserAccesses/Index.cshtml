@@ -34,11 +34,13 @@
 
 
         column.For(ent => ent.FullName).Named("Full Name");
+
+        column.For(ent => ent.UserRoleID).Named("Role");
           
                 
     }).Columns(extraCols =>
     {
-        extraCols.Custom(cus => "<button type=\"submit\" onclick=\"parent.location='" + @Url.Action("CreateOrUpdate/" + cus.UserID) + "';return false;\" title=\"Edit\" value=\"Edit\" class = \"btn btn-xs btn-primary \" /><i class=\"glyphicon glyphicon-edit\"></i>   </button>");
+        extraCols.Custom(cus => "<button type=\"submit\" onclick=\"parent.location='" + @Url.Action("CreateOrUpdate/" + cus.UserID) + "';return false;\" title=\"Edit\" value=\"Edit\" class = \"btn btn-xs btn-primary \" /><i class=\"glyphicon glyphicon-edit\"></i>   </button> <button type=\"submit\" onclick=\"parent.location='" + @Url.Action("Delete/" + cus.UserID) + "';return false;\" title=\"Delete\" value=\"Delete\" class = \"btn btn-xs btn-primary \" /><i class=\"glyphicon glyphicon-remove-sign\"></i>   </button>");
     }).Attributes(@class => "table table-hover ")
 
      @{Html.RenderPartial("_PagerPartial", Model);}

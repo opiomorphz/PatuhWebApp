@@ -41,6 +41,9 @@ namespace Patuh.Application
                         case "Transaction":
                             iconClass = "fa-newspaper-o";
                             break;
+                        case "Content":
+                            iconClass = "fa-newspaper-o";
+                            break;
                         default:
                             iconClass = "fa-home";
                             break;

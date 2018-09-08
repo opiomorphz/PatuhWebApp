@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Generated\MsUserAppService.Generated.cs" />
+    <Compile Include="Standard\TrAttachmentAppService.cs" />
+    <Compile Include="Standard\TrArticleAppService.cs" />
     <Compile Include="Standard\MsSerialAppService.cs" />
     <Compile Include="Standard\ApplAppService.cs">
       <SubType>Code</SubType>
